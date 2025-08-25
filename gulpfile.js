@@ -57,4 +57,4 @@ function watch() {
 
 gulp.task("watch", watch);
 
-gulp.task("default", gulp.parallel("watch", "sass", "mainjs", "browser-sync"));
+gulp.task("default", gulp.parallel("watch", "browser-sync", "sass", "mainjs"));

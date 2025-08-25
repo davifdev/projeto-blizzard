@@ -1,5 +1,46 @@
 .btn {
+  display: inline-block;
   border-radius: 0.4rem;
   line-height: 4.1rem;
-  
+  font-size: 1.6rem;
+  color: white;
+  padding: 0 1.6rem;
+  border: 1px solid transparent;
+  &-primary {
+    border-color: $primary-default;
+    background-color: $primary-default;
+  }
+  &-secondary {
+    border-color: $white;
+  }
+}
+
+.card-game {
+  display: block;
+
+  width: 100%;
+  max-width: 28rem;
+  .image {
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    border-radius: 0.4rem;
+    height: 38.4rem;
+    transition: transform 0.3s ease-in;
+  }
+  .info {
+    h3 {
+      font-size: 1.935rem;
+      color: #e5e5e5;
+    }
+    p {
+      font-size: 15px;
+      color: rgba(229, 229, 229, 0.808);
+    }
+  }
+
+  &:hover {
+    .image {
+      transform: scale(1.05);
+    }
+  }
 }
