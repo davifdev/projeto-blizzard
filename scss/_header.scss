@@ -1,12 +1,12 @@
 header {
-  position: fixed;
+  height: 9.6rem;
   width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 9.6rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.11);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 999;
   .container {
     display: flex;
@@ -14,11 +14,21 @@ header {
     align-items: center;
   }
   .left-menu {
+    .logo {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        border-top: 0.2rem solid $primary-default;
+        width: 4.3rem;
+        bottom: -2.8rem;
+      }
+    }
     display: flex;
     align-items: center;
     gap: 11.2rem;
     .nav-links {
-      .nav-list {
+      .list-items {
         display: flex;
         align-items: center;
         gap: 3.4rem;
@@ -28,14 +38,13 @@ header {
             align-items: center;
             gap: 1.4rem;
             font-size: 1.4rem;
-            color: $white;
           }
         }
       }
     }
   }
   .right-menu {
-    .btns {
+    .buttons {
       display: flex;
       align-items: center;
       gap: 1.6rem;
@@ -43,7 +52,7 @@ header {
         display: flex;
         align-items: center;
         gap: 0.6rem;
-        padding: 0 2.6rem;
+        padding: 0 2.65rem;
       }
     }
   }

@@ -20,24 +20,22 @@
     <header>
       <div class="container">
         <div class="left-menu">
-          <a href="#">
-            <img src="./assets/logo.svg" alt="" />
+          <a href="#" class="logo">
+            <img src="./assets/logo.svg" alt="logo blizzard" />
           </a>
           <nav class="nav-links">
-            <ul class="nav-list">
+            <ul class="list-items">
               <li>
-                <a href="#"
-                  >Jogos<img
-                    src="./assets/arrow-down.svg"
-                    alt="Ícone Arrow Down"
-                /></a>
+                <a href="#">
+                  <span>Jogos</span>
+                  <img src="./assets/arrow-down.svg" alt="flecha para baixo" />
+                </a>
               </li>
               <li>
-                <a href="#"
-                  >Esportes<img
-                    src="./assets/arrow-down.svg"
-                    alt="Ícone Arrow Down"
-                /></a>
+                <a href="#">
+                  <span>Esportes</span>
+                  <img src="./assets/arrow-down.svg" alt="flecha para baixo" />
+                </a>
               </li>
               <li><a href="#">Loja</a></li>
               <li><a href="#">Notícias</a></li>
@@ -46,10 +44,10 @@
           </nav>
         </div>
         <div class="right-menu">
-          <div class="btns">
-            <a href="#" class="btn btn-secondary">Criar conta</a>
-            <a href="#" class="btn btn-primary">
-              <img src="./assets/icon-perfil.svg" alt="Ícone Perfil" />Logar</a
+          <div class="buttons">
+            <a href="#" class="btn btn-secondary">Criar conta</a
+            ><a href="#" class="btn btn-primary"
+              ><img src="./assets/icon-perfil.svg" alt="ícone perfil" />Logar</a
             >
           </div>
         </div>
@@ -57,29 +55,42 @@
     </header>
 
     <section class="s-hero">
-      <div class="slide-thumbnail">
+      <div class="main-slide-thumbnail">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./assets/logo-xs-diablo-iv.png" alt="Logo Diablo IV" />
+            <div class="icon-game">
+              <img src="./assets/logo-xs-diablo-iv.png" alt="logo diablo 4" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./assets/logo-xs-heartstone.png" alt="Logo Hearthstone" />
+            <div class="icon-game">
+              <img
+                src="./assets/logo-small-heathstone.png"
+                alt="logo hearthstone"
+              />
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./assets/logo-xs-ww.png" alt="Logo World Warcraft" />
+            <div class="icon-game">
+              <img src="./assets/logo-small-ww.png" alt="logo world warcraft" />
+            </div>
           </div>
-          <div class="swiper-slide disabled">
-            <img
-              src="./assets/logo-xs-diablo-imortal.png"
-              alt="Logo Diablo Imortal"
-            />
+          <div class="swiper-slide">
+            <div class="icon-game">
+              <img
+                src="./assets/logo-xs-diablo-imortal.png"
+                alt="logo diablo imortal"
+              />
+            </div>
           </div>
-          <div class="swiper-slide disabled">
-            <img src="./assets/logo-starcraft-ii.png" alt="Logo Starcraft" />
+          <div class="swiper-slide">
+            <div class="icon-game">
+              <img src="./assets/logo-starcraft-ii.png" alt="logo starcraft" />
+            </div>
           </div>
         </div>
       </div>
-      <div class="slide-principal">
+      <div class="main-slide">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-01">
             <div class="container">
@@ -94,24 +105,24 @@
                 <div class="logo">
                   <img
                     src="./assets/logo-default-diablo-iv.png"
-                    alt="Logo Diablo 4"
+                    alt="logo diablo 4"
                   />
                 </div>
                 <div class="video">
-                  <span>Assista o trailer</span>
+                  <span>Assista o Trailer</span>
                   <button class="btn-video">
                     <img
                       src="./assets/banner-video-01.png"
-                      alt="Banner Video 1"
-                      class="thumb default"
+                      alt="banner de guerreiros"
+                      class="thumb"
                     />
                     <img
                       src="./assets/gifs/giphy.gif"
-                      alt="Gif Video 1"
+                      alt="gif de guerreiros"
                       class="thumb hover"
                     />
-                    <div class="icon">
-                      <img src="./assets/icon-play.svg" alt="Ícone de Play" />
+                    <div class="icon-play">
+                      <img src="./assets/icon-play.svg" alt="ícone de play" />
                     </div>
                   </button>
                 </div>
@@ -133,24 +144,24 @@
                 <div class="logo">
                   <img
                     src="./assets/logo-default-hearthstone.png"
-                    alt="Logo Hearthstone"
+                    alt="logo hearthstone"
                   />
                 </div>
                 <div class="video">
-                  <span>Assista o trailer</span>
+                  <span>Assista o Trailer</span>
                   <button class="btn-video">
                     <img
                       src="./assets/banner-video-02.png"
-                      alt="Banner Video 2"
-                      class="thumb default"
+                      alt="banner de guerreiros"
+                      class="thumb"
                     />
                     <img
                       src="./assets/gifs/heartstone.gif"
-                      alt="Gif Video 2"
+                      alt="gif hearthstone"
                       class="thumb hover"
                     />
-                    <div class="icon">
-                      <img src="./assets/icon-play.svg" alt="Ícone de Play" />
+                    <div class="icon-play">
+                      <img src="./assets/icon-play.svg" alt="ícone de play" />
                     </div>
                   </button>
                 </div>
@@ -160,40 +171,633 @@
           <div class="swiper-slide slide-03">
             <div class="container">
               <div class="left-content">
-                <h1>Desbrave as Terras Sombrias em Shadowlands! </h1>
-                <p>
-                  O que jaz além do mundo que você conhece?
-                </p>
-                <a href="#" class="btn btn-primary">Reserve agora na pré-venda</a>
+                <h1>Desbrave as Terras Sombrias em Shadowlands!</h1>
+                <p>O que jaz além do mundo que você conhece?</p>
+                <a href="#" class="btn btn-primary"
+                  >Reserve agora na pré-venda</a
+                >
               </div>
               <div class="right-content">
                 <div class="logo">
                   <img
                     src="./assets/logo-default-ww.png"
-                    alt="Logo World Warcraft"
+                    alt="logo world warcraft"
                   />
                 </div>
                 <div class="video">
-                  <span>Assista o trailer</span>
+                  <span>Assista o Trailer</span>
                   <button class="btn-video">
                     <img
-                      src="./assets/banner-video-03.png"
-                      alt="Banner Video 3"
-                      class="thumb default"
+                      src="./assets/banner-video-02.png"
+                      alt="banner de guerreiros"
+                      class="thumb"
                     />
                     <img
-                      src="./assets/gifs/bolvar-sylvanas.gif"
-                      alt="Gif Video 3"
+                      src="./assets/gifs/heartstone.gif"
+                      alt="gif hearthstone"
                       class="thumb hover"
                     />
-                    <div class="icon">
-                      <img src="./assets/icon-play.svg" alt="Ícone de Play" />
+                    <div class="icon-play">
+                      <img src="./assets/icon-play.svg" alt="ícone de play" />
                     </div>
                   </button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="swiper-wrapper"></div>
+    </section>
+
+    <section class="s-games">
+      <div class="container">
+        <div class="top">
+          <div class="left-content">
+            <span>Games</span>
+            <h2>Jogos exclusivos</h2>
+          </div>
+          <div class="right-content">
+            <ul class="tab-navigation">
+              <li>
+                <button class="active">
+                  <img
+                    src="./assets/filter-games-01.svg"
+                    alt="ícone battlenet"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="./assets/filter-games-02.svg" alt="ícone nitendo" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img src="./assets/filter-games-03.svg" alt="ícone xbox" />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./assets/filter-games-04.svg"
+                    alt="ícone playstation"
+                  />
+                </button>
+              </li>
+            </ul>
+            <a href="#" class="all-games"
+              ><img
+                src="./assets/icon-group-blue.svg"
+                alt="ícone grupo azul"
+              />Ver todos jogos</a
+            >
+          </div>
+        </div>
+        <div class="tab-games-content">
+          <div class="tab-pane-games active">
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-01.png"
+                  alt="diablo 2 resurrected"
+                />
+              </div>
+              <div class="info">
+                <h3>Diablo II: Resurrected</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-02.png" alt="overwatch" />
+              </div>
+              <div class="info">
+                <h3>Overwatch</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-03.png" alt="overwatch 2" />
+              </div>
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-04.png"
+                  alt="world warcraft clasic"
+                />
+              </div>
+              <div class="info">
+                <h3>World of Warcraft Classic</h3>
+                <p>RPG multijogador em massa</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-05.png" alt="hearthstone" />
+              </div>
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Jogo de cards estratégicos</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-06.png" alt="heroes of storm" />
+              </div>
+              <div class="info">
+                <h3>Heroes of storm</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-07.png" alt="diablo 4" />
+              </div>
+              <div class="info">
+                <h3>Diablo IV</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-08.png"
+                  alt="warcraft 3 reforged"
+                />
+              </div>
+              <div class="info">
+                <h3>Warcraft III Reforged</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-09.png" alt="diablo 3" />
+              </div>
+              <div class="info">
+                <h3>Diablo III</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-10.png" alt="starcraft 3" />
+              </div>
+              <div class="info">
+                <h3>StarCraft II</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-11.png"
+                  alt="starcraft remastered"
+                />
+              </div>
+              <div class="info">
+                <h3>StarCraft Remastered</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/logo.svg" alt="logo blizzard" />
+                <p>
+                  <img
+                    src="./assets/icon-group-white.svg"
+                    alt="ícone grupo branco"
+                  />Ver todos jogos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane-games">
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-04.png"
+                  alt="world warcraft clasic"
+                />
+              </div>
+              <div class="info">
+                <h3>World of Warcraft Classic</h3>
+                <p>RPG multijogador em massa</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-05.png" alt="hearthstone" />
+              </div>
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Jogo de cards estratégicos</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-06.png" alt="heroes of storm" />
+              </div>
+              <div class="info">
+                <h3>Heroes of storm</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-07.png" alt="diablo 4" />
+              </div>
+              <div class="info">
+                <h3>Diablo IV</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-01.png"
+                  alt="diablo 2 resurrected"
+                />
+              </div>
+              <div class="info">
+                <h3>Diablo II: Resurrected</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-02.png" alt="overwatch" />
+              </div>
+              <div class="info">
+                <h3>Overwatch</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-03.png" alt="overwatch 2" />
+              </div>
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-08.png"
+                  alt="warcraft 3 reforged"
+                />
+              </div>
+              <div class="info">
+                <h3>Warcraft III Reforged</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-09.png" alt="diablo 3" />
+              </div>
+              <div class="info">
+                <h3>Diablo III</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-10.png" alt="starcraft 3" />
+              </div>
+              <div class="info">
+                <h3>StarCraft II</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-11.png"
+                  alt="starcraft remastered"
+                />
+              </div>
+              <div class="info">
+                <h3>StarCraft Remastered</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/logo.svg" alt="logo blizzard" />
+                <p>
+                  <img
+                    src="./assets/icon-group-white.svg"
+                    alt="ícone grupo branco"
+                  />Ver todos jogos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane-games">
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-01.png"
+                  alt="diablo 2 resurrected"
+                />
+              </div>
+              <div class="info">
+                <h3>Diablo II: Resurrected</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-02.png" alt="overwatch" />
+              </div>
+              <div class="info">
+                <h3>Overwatch</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-03.png" alt="overwatch 2" />
+              </div>
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-04.png"
+                  alt="world warcraft clasic"
+                />
+              </div>
+              <div class="info">
+                <h3>World of Warcraft Classic</h3>
+                <p>RPG multijogador em massa</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-05.png" alt="hearthstone" />
+              </div>
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Jogo de cards estratégicos</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-06.png" alt="heroes of storm" />
+              </div>
+              <div class="info">
+                <h3>Heroes of storm</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-07.png" alt="diablo 4" />
+              </div>
+              <div class="info">
+                <h3>Diablo IV</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-08.png"
+                  alt="warcraft 3 reforged"
+                />
+              </div>
+              <div class="info">
+                <h3>Warcraft III Reforged</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-09.png" alt="diablo 3" />
+              </div>
+              <div class="info">
+                <h3>Diablo III</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-10.png" alt="starcraft 3" />
+              </div>
+              <div class="info">
+                <h3>StarCraft II</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-11.png"
+                  alt="starcraft remastered"
+                />
+              </div>
+              <div class="info">
+                <h3>StarCraft Remastered</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/logo.svg" alt="logo blizzard" />
+                <p>
+                  <img
+                    src="./assets/icon-group-white.svg"
+                    alt="ícone grupo branco"
+                  />Ver todos jogos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane-games">
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-05.png" alt="hearthstone" />
+              </div>
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Jogo de cards estratégicos</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-06.png" alt="heroes of storm" />
+              </div>
+              <div class="info">
+                <h3>Heroes of storm</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-07.png" alt="diablo 4" />
+              </div>
+              <div class="info">
+                <h3>Diablo IV</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-08.png"
+                  alt="warcraft 3 reforged"
+                />
+              </div>
+              <div class="info">
+                <h3>Warcraft III Reforged</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-01.png"
+                  alt="diablo 2 resurrected"
+                />
+              </div>
+              <div class="info">
+                <h3>Diablo II: Resurrected</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-02.png" alt="overwatch" />
+              </div>
+              <div class="info">
+                <h3>Overwatch</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-03.png" alt="overwatch 2" />
+              </div>
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Ação em equipe</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-04.png"
+                  alt="world warcraft clasic"
+                />
+              </div>
+              <div class="info">
+                <h3>World of Warcraft Classic</h3>
+                <p>RPG multijogador em massa</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-09.png" alt="diablo 3" />
+              </div>
+              <div class="info">
+                <h3>Diablo III</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img src="./assets/card-game-10.png" alt="starcraft 3" />
+              </div>
+              <div class="info">
+                <h3>StarCraft II</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <a href="#" class="card-game">
+              <div class="image">
+                <img
+                  src="./assets/card-game-11.png"
+                  alt="starcraft remastered"
+                />
+              </div>
+              <div class="info">
+                <h3>StarCraft Remastered</h3>
+                <p>RPG de ação</p>
+              </div>
+            </a>
+            <div class="card">
+              <div class="content">
+                <img src="./assets/logo.svg" alt="logo blizzard" />
+                <p>
+                  <img
+                    src="./assets/icon-group-white.svg"
+                    alt="ícone grupo branco"
+                  />Ver todos jogos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-download">
+      <div class="container">
+        <div class="left-content">
+          <img src="./assets/battlenet.svg" alt="logo battlenet" class="logo" />
+          <h2>Baixe agora o battle.net</h2>
+          <ul>
+            <li>
+              <div class="icon">
+                <img src="./assets/icon-seus-jogos.svg" alt="ícone de jogos" />
+              </div>
+              <span>Seus jogos em um só lugar</span>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/icon-conect.svg" alt="ícone de conexão" />
+              </div>
+              <span>Conecte-se aos seus amigos</span>
+            </li>
+            <li>
+              <img src="./assets/icon-buy.svg" alt="ícone de compra" /><span
+                >Compre jogos e itens digitais</span
+              >
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary">
+            <div class="icon">
+              <img src="./assets/apple.svg" alt="logo apple" />
+            </div>
+            <span>Baixar para o MacOS</span>
+          </a>
+        </div>
+        <div class="right-content">
+          <img
+            src="./assets/image-download-lg.png"
+            alt="imagem de download grande"
+            class="img-lg"
+          />
+          <img
+            src="./assets/image-download-sm.png"
+            alt="imagem de download pequena"
+            class="img-sm"
+          />
         </div>
       </div>
     </section>
