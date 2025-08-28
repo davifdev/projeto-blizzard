@@ -18,6 +18,10 @@ const slide_hero = new Swiper(".main-slide", {
 
 const tabNavigation = document.querySelectorAll(".tab-navigation li button");
 const tabGames = document.querySelectorAll(".tab-pane-games");
+const btnLogin = document.querySelector(".btn-login");
+const btnClose = document.querySelector(".btn-close");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 
 tabNavigation.forEach((filter, index) => {
   filter.addEventListener("click", () => {
@@ -31,4 +35,19 @@ tabNavigation.forEach((filter, index) => {
       filter.classList.add("active");
     });
   });
+});
+
+function openAndCloseModal() {
+  modal.classList.toggle("active");
+}
+
+btnLogin.addEventListener("click", openAndCloseModal);
+btnClose.addEventListener("click", openAndCloseModal);
+overlay.addEventListener("click", openAndCloseModal);
+document.addEventListener("keydown", (e) => {
+  if (modal.classList.contains("active")) {
+    if (e.key === "Escape") {
+      openAndCloseModal();
+    }
+  }
 });
