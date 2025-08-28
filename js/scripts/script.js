@@ -18,10 +18,6 @@ const slide_hero = new Swiper(".main-slide", {
 
 const tabNavigation = document.querySelectorAll(".tab-navigation li button");
 const tabGames = document.querySelectorAll(".tab-pane-games");
-const btnLogin = document.querySelector(".btn-login");
-const btnClose = document.querySelector(".btn-close");
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
 
 tabNavigation.forEach((filter, index) => {
   filter.addEventListener("click", () => {
@@ -37,6 +33,11 @@ tabNavigation.forEach((filter, index) => {
   });
 });
 
+const btnLogin = document.querySelector(".btn-login");
+const btnClose = document.querySelector(".btn-close");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+
 function openAndCloseModal() {
   modal.classList.toggle("active");
 }
@@ -50,4 +51,26 @@ document.addEventListener("keydown", (e) => {
       openAndCloseModal();
     }
   }
+});
+
+const btnMenu = document.querySelectorAll(".js-btn-menu");
+const jsMenu = document.querySelectorAll(".js-menu");
+
+btnMenu.forEach((btn, index) => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    jsMenu.forEach((item) => {
+      item.classList.remove("active");
+      item.addEventListener("mouseleave", () => {
+        item.classList.remove("active");
+         btnMenu.forEach((item) => item.classList.remove("active"));
+      });
+    });
+
+    btnMenu.forEach((item) => item.classList.remove("active"));
+
+    btn.classList.add("active");
+    jsMenu[index].classList.add("active");
+  });
 });

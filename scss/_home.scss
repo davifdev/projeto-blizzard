@@ -1,12 +1,13 @@
 .s-hero {
   position: relative;
+  z-index: 997;
   .main-slide-thumbnail {
     position: absolute;
     max-width: 4.8rem;
     height: 32rem;
     top: 24.5rem;
     left: 29.8rem;
-    z-index: 999;
+    z-index: 996;
     .swiper-wrapper {
       .swiper-slide {
         width: 4.8rem;
